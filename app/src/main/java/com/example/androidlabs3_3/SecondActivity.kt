@@ -1,12 +1,11 @@
 package com.example.androidlabs3_3
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
-import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
 import com.example.androidlabs3_3.databinding.ActivitySecondBinding
 
 class SecondActivity : AppCompatActivity() {
