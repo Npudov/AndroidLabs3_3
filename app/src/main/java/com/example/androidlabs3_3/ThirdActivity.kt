@@ -16,10 +16,11 @@ class ThirdActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityThirdBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.toFirst.setOnClickListener {
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        binding.bnToFirst.setOnClickListener {
             toFirst()
         }
-        binding.toSecond.setOnClickListener {
+        binding.bnToSecond.setOnClickListener {
             toSecond()
         }
     }
@@ -46,5 +47,10 @@ class ThirdActivity : AppCompatActivity() {
 
     private fun toSecond() {
         finish()
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return super.onSupportNavigateUp()
     }
 }

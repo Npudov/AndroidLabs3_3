@@ -15,7 +15,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.toSecond.setOnClickListener {
+
+        binding.bnToSecond.setOnClickListener {
             toSecond()
         }
     }
